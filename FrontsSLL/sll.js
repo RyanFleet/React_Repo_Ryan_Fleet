@@ -34,14 +34,30 @@ class SLL {
             return this.head.value
         }
     }
+
+    display(){
+        var liststr = ''
+        if(this.head == null){
+            return null
+        }
+        liststr += this.head.value
+        var runner = this.head.next
+        while(runner != null){
+            liststr += ', ' + runner.value
+            runner = runner.next
+        }
+        return liststr
+    }
 }
 
 list1 = new SLL()
 list1.addFront(18)
 list1.addFront(5)
 list1.addFront(73)
+
+console.log(list1.display())
+
 console.log(list1)
+// list1.removeFront()
 
-list1.removeFront()
-
-console.log(list1.front())
+// console.log(list1.front())
