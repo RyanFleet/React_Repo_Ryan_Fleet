@@ -1,0 +1,100 @@
+
+
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  background-attachment: fixed;
+  height: 500px;
+  background-color: #21242a;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.custom-popover {
+  --bs-popover-max-width: 200px;
+  --bs-popover-border-color: var(--bs-primary);
+  --bs-popover-header-bg: var(--bs-primary);
+  --bs-popover-header-color: var(--bs-white);
+  --bs-popover-body-padding-x: 1rem;
+  --bs-popover-body-padding-y: .5rem;
+}
+
+.active {
+  text-decoration-color: green;
+  text-decoration-thickness: 2px;
+}
+
+#logout {
+  text-decoration: none;
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: grey;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+
+
+#body {
+  background: linear-gradient(-45deg, #1b7924, #a97df4, #23a6d5, #0ec74f);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+.smallLine {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  display: flex;
+  height: 3px;
+  animation: gradient 15s ease infinite;
+}
+
+/* VIDEO */
+.player-wrapper {
+  position: relative;
+  padding-top: 56.25%; /* Player ratio: 100 / (1280 / 720) */
+}
+.react-player {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+
