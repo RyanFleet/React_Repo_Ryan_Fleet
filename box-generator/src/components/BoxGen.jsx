@@ -28,7 +28,6 @@ const BoxGen = (props) => {
             ></input>
             <input type="submit" value="Add Color" />
         </form>
-        
     )
 }
 

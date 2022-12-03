@@ -13,6 +13,6 @@ module.exports.createProduct = (request, response) => {
 
 module.exports.allProducts = (req,res)=>{
     Product.find()
-        .then(products=>{res.json(products)})
+        .then(products=>res.json(products))
         .catch(err=>res.json(err))
 }
