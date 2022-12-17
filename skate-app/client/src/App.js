@@ -42,8 +42,8 @@ useEffect(() => {
   return (
     <div className="App">
       <BrowserRouter>
-        <LoginRegister loggedIn={loggedIn} setLoggedIn={setLoggedIn} />
-        <DashboardLinks loggedIn={loggedIn} setLoggedIn={setLoggedIn} />
+        <LoginRegister users={users} loggedIn={loggedIn} setLoggedIn={setLoggedIn} />
+        <DashboardLinks users={users} loggedIn={loggedIn} setLoggedIn={setLoggedIn} />
         <Routes>
           {/* Login / Register / page after login */}
           <Route element={<Login users={users} setUsers={setUsers} loggedIn={loggedIn} setLoggedIn={setLoggedIn} />} path="/login" />

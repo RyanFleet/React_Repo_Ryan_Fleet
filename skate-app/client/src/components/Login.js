@@ -23,6 +23,7 @@ const Login = (props) => {
         }, { withCredentials: true, credentials: 'include' })
             .then(res => {
                 console.log(res.data)
+                console.log(users)
                 // setUsers([...users, res.data])
                 setLoggedIn(true)
                 nav(`/`)
