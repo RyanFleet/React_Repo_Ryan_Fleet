@@ -37,9 +37,9 @@ const Register = (props) => {
 
 
     return (
-        <div id='body2' className='container-fluid bg-white p-3'>
-            <form onSubmit={SubmitRegister} className='form-control form-floating form-control-lg bg-dark'>
-                <h3 className='display-6' style={{ color: 'lightblue' }}>Sign Up!</h3>
+        <div id='body2' className='container-fluid bg-dark p-3'>
+            <form style={{backgroundColor: '#5e615f'}} onSubmit={SubmitRegister} className='form-control form-floating form-control-lg'>
+                <h3 className='display-6' style={{ color: 'white' }}>Sign Up!</h3>
                 <p className='text-start p-2' style={{ color: 'red' }}>* Required</p>
                 <div className='form-floating' style={{ color: '' }}>
                     {
@@ -85,7 +85,7 @@ const Register = (props) => {
                         </div>
                     }
                 </div>
-                <input className='btn btn-success' type="submit" value={"Register"} />
+                <input className='btn btn-dark' type="submit" value={"Register"} />
             </form>
         </div>
     )

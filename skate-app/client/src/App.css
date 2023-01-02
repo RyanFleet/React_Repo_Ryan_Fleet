@@ -24,7 +24,7 @@
 }
 
 .active {
-  text-decoration-color: green;
+  text-decoration-color: rgb(12, 12, 12);
   text-decoration-thickness: 2px;
 }
 

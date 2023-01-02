@@ -10,9 +10,9 @@ const DashboardLinks = (props) => {
 
     return (
         <div>
-            <div className='bg-dark container-fluid'>
+            <div className='bg-dark container-fluid p-2'>
                 {
-                    loggedIn && <><h4 id='body' className='smallLine w-50 container-fluid'>________________________</h4>
+                    loggedIn && <>
                         <NavLink style={{ color: 'lightgrey', marginRight: '10px' }} to={'/almost'}>Almost</NavLink>
                         <NavLink style={{ color: 'lightgrey', marginRight: '10px' }} to={'/baker'}>Baker</NavLink>
                         <NavLink style={{ color: 'lightgrey', marginLeft: '10px' }} to={'/palace'}>Palace</NavLink>
