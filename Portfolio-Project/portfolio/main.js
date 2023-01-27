@@ -249,6 +249,188 @@ const sat = new THREE.Mesh(
 scene.add(sat);
 sat.position.set(2,12,2)
 
+// WINDOWS 
+const window1 = new THREE.Mesh(
+  new THREE.BoxGeometry(0.3,0.6,4.2),
+  new THREE.MeshBasicMaterial({color: 0x000000})
+)
+scene.add(window1)
+window1.position.set(0.5,8,2)
+
+const window2 = new THREE.Mesh(
+  new THREE.BoxGeometry(0.3,0.6,4.2),
+  new THREE.MeshBasicMaterial({color: 0x000000})
+)
+scene.add(window2)
+window2.position.set(1,8,2)
+
+const window3 = new THREE.Mesh(
+  new THREE.BoxGeometry(0.3,0.6,4.2),
+  new THREE.MeshBasicMaterial({color: 0x000000})
+)
+scene.add(window3)
+window3.position.set(1.5,8,2)
+
+const window4 = new THREE.Mesh(
+  new THREE.BoxGeometry(0.3,0.6,4.2),
+  new THREE.MeshBasicMaterial({color: 0x000000})
+)
+scene.add(window4)
+window4.position.set(2,8,2)
+
+const window5 = new THREE.Mesh(
+  new THREE.BoxGeometry(0.3,0.6,4.2),
+  new THREE.MeshBasicMaterial({color: 0x000000})
+)
+scene.add(window5)
+window5.position.set(2.5,8,2)
+
+const window6 = new THREE.Mesh(
+  new THREE.BoxGeometry(0.3,0.6,4.2),
+  new THREE.MeshBasicMaterial({color: 0x000000})
+)
+scene.add(window6)
+window6.position.set(3,8,2)
+
+const window7 = new THREE.Mesh(
+  new THREE.BoxGeometry(0.3,0.6,4.2),
+  new THREE.MeshBasicMaterial({color: 0x000000})
+)
+scene.add(window7)
+window7.position.set(3.5,8,2)
+
+const window8 = new THREE.Mesh(
+  new THREE.BoxGeometry(0.3,0.6,4.2),
+  new THREE.MeshBasicMaterial({color: 0x000000})
+)
+scene.add(window8)
+window8.position.set(0.5,7,2)
+
+const window9 = new THREE.Mesh(
+  new THREE.BoxGeometry(0.3,0.6,4.2),
+  new THREE.MeshBasicMaterial({color: 0x000000})
+)
+scene.add(window9)
+window9.position.set(1,7,2)
+
+const window10 = new THREE.Mesh(
+  new THREE.BoxGeometry(0.3,0.6,4.2),
+  new THREE.MeshBasicMaterial({color: 0x000000})
+)
+scene.add(window10)
+window10.position.set(1.5,7,2)
+
+const window11= new THREE.Mesh(
+  new THREE.BoxGeometry(0.3,0.6,4.2),
+  new THREE.MeshBasicMaterial({color: 0x000000})
+)
+scene.add(window11)
+window11.position.set(2,7,2)
+
+const window12 = new THREE.Mesh(
+  new THREE.BoxGeometry(0.3,0.6,4.2),
+  new THREE.MeshBasicMaterial({color: 0x000000})
+)
+scene.add(window12)
+window12.position.set(2.5,7,2)
+
+const window13 = new THREE.Mesh(
+  new THREE.BoxGeometry(0.3,0.6,4.2),
+  new THREE.MeshBasicMaterial({color: 0x000000})
+)
+scene.add(window13)
+window13.position.set(3,7,2)
+
+const window14 = new THREE.Mesh(
+  new THREE.BoxGeometry(0.3,0.6,4.2),
+  new THREE.MeshBasicMaterial({color: 0x000000})
+)
+scene.add(window14)
+window14.position.set(3.5,7,2)
+
+const window15 = new THREE.Mesh(
+  new THREE.BoxGeometry(0.3,0.6,4.2),
+  new THREE.MeshBasicMaterial({color: 0x000000})
+)
+scene.add(window15)
+window15.position.set(1.5,6,2)
+
+const window16 = new THREE.Mesh(
+  new THREE.BoxGeometry(0.3,0.6,4.2),
+  new THREE.MeshBasicMaterial({color: 0x000000})
+)
+scene.add(window16)
+window16.position.set(2,6,2)
+
+const window17 = new THREE.Mesh(
+  new THREE.BoxGeometry(0.3,0.6,4.2),
+  new THREE.MeshBasicMaterial({color: 0x000000})
+)
+scene.add(window17)
+window17.position.set(2.5,6,2)
+
+const window18 = new THREE.Mesh(
+  new THREE.BoxGeometry(0.3,0.6,4.2),
+  new THREE.MeshBasicMaterial({color: 0x000000})
+)
+scene.add(window18)
+window18.position.set(1.5,5,2)
+
+const window19 = new THREE.Mesh(
+  new THREE.BoxGeometry(0.3,0.6,4.2),
+  new THREE.MeshBasicMaterial({color: 0x000000})
+)
+scene.add(window19)
+window19.position.set(2,5,2)
+
+const window20 = new THREE.Mesh(
+  new THREE.BoxGeometry(0.3,0.6,4.2),
+  new THREE.MeshBasicMaterial({color: 0x000000})
+)
+scene.add(window20)
+window20.position.set(2.5,5,2)
+
+const window21 = new THREE.Mesh(
+  new THREE.BoxGeometry(0.3,0.6,4.2),
+  new THREE.MeshBasicMaterial({color: 0x000000})
+)
+scene.add(window21)
+window21.position.set(1.5,4,2)
+
+const window22 = new THREE.Mesh(
+  new THREE.BoxGeometry(0.3,0.6,4.2),
+  new THREE.MeshBasicMaterial({color: 0x000000})
+)
+scene.add(window22)
+window22.position.set(2,4,2)
+
+const window23 = new THREE.Mesh(
+  new THREE.BoxGeometry(0.3,0.6,4.2),
+  new THREE.MeshBasicMaterial({color: 0x000000})
+)
+scene.add(window23)
+window23.position.set(2.5,4,2)
+
+const window24 = new THREE.Mesh(
+  new THREE.BoxGeometry(0.3,0.6,4.2),
+  new THREE.MeshBasicMaterial({color: 0x000000})
+)
+scene.add(window24)
+window24.position.set(1.5,3,2)
+
+const window25 = new THREE.Mesh(
+  new THREE.BoxGeometry(0.3,0.6,4.2),
+  new THREE.MeshBasicMaterial({color: 0x000000})
+)
+scene.add(window25)
+window25.position.set(2,3,2)
+
+const window26 = new THREE.Mesh(
+  new THREE.BoxGeometry(0.3,0.6,4.2),
+  new THREE.MeshBasicMaterial({color: 0x000000})
+)
+scene.add(window26)
+window26.position.set(2.5,3,2)
 
 
 // BUILDING //^^
