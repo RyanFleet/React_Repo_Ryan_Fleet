@@ -37,7 +37,7 @@ const Register = (props) => {
 
 
     return (
-        <div id='body2' className='container-fluid bg-dark p-3'>
+        <div id='body2' className='container-fluid bg-white p-3'>
             <form style={{backgroundColor: '#5e615f'}} onSubmit={SubmitRegister} className='form-control form-floating form-control-lg'>
                 <h3 className='display-6' style={{ color: 'white' }}>Sign Up!</h3>
                 <p className='text-start p-2' style={{ color: 'red' }}>* Required</p>
@@ -45,10 +45,10 @@ const Register = (props) => {
                     {
                         errors.userName ? <div className='form-floating'>
                             <input style={{ color: 'grey'}} className="form-control is-invalid" id="floatingInputValue" placeholder="User Name" type="text" onChange={(e) => setUserName(e.target.value)} />
-                            <label htmlFor="floatingInputValue" className='w-50 text-danger'>* {errors.userName.message}</label><br />
+                            <label htmlFor="floatingInputValue" className='text-start text-danger'>* {errors.userName.message}</label><br />
                         </div> : <div className='form-floating'>
                             <input className="form-control " id="floatingInputValue" placeholder="User Name" type="text" onChange={(e) => setUserName(e.target.value)} />
-                            <label htmlFor="floatingInputValue" className='w-50 text-dark'><span style={{color:'red'}}>*</span> User Name</label><br />
+                            <label htmlFor="floatingInputValue" className='text-start text-dark'><span style={{color:'red'}}>*</span> User Name</label><br />
                         </div>
                     }
                 </div>
@@ -56,10 +56,10 @@ const Register = (props) => {
                     {
                         errors.email ? <div className='form-floating'>
                             <input style={{ color: 'grey'}} className="form-control is-invalid" id="floatingInputValue" placeholder="Email" type="email" onChange={(e) => setEmail(e.target.value)} />
-                            <label htmlFor="floatingInputValue" className='w-50 text-danger'>* {errors.email.message}</label><br />
+                            <label htmlFor="floatingInputValue" className='text-start text-danger'>* {errors.email.message}</label><br />
                         </div> : <div className='form-floating'>
                             <input className="form-control " id="floatingInputValue" placeholder="Email" type="email" onChange={(e) => setEmail(e.target.value)} />
-                            <label htmlFor="floatingInputValue" className='w-50 text-dark'><span style={{color:'red'}}>*</span> Email</label><br />
+                            <label htmlFor="floatingInputValue" className='text-start text-dark'><span style={{color:'red'}}>*</span> Email</label><br />
                         </div>
                     }
                 </div>
@@ -67,10 +67,10 @@ const Register = (props) => {
                     {
                         errors.password ? <div className='form-floating'>
                             <input style={{ color: 'grey'}} className="form-control is-invalid" id="floatingInputValue" placeholder="Password" type="text" onChange={(e) => setPassword(e.target.value)} />
-                            <label htmlFor="floatingInputValue" className='w-50 text-danger'>* {errors.password.message}</label><br />
+                            <label htmlFor="floatingInputValue" className='text-start text-danger'>* {errors.password.message}</label><br />
                         </div> : <div className='form-floating'>
                             <input className="form-control " id="floatingInputValue" placeholder="Password" type="text" onChange={(e) => setPassword(e.target.value)} />
-                            <label htmlFor="floatingInputValue" className='w-50 text-dark'><span style={{color:'red'}}>*</span> Password</label><br />
+                            <label htmlFor="floatingInputValue" className='text-start text-dark'><span style={{color:'red'}}>*</span> Password</label><br />
                         </div>
                     }
                 </div>
@@ -78,10 +78,10 @@ const Register = (props) => {
                     {
                         errors.confirmPassword ? <div className='form-floating'>
                             <input style={{ color: 'grey'}} className="form-control is-invalid" id="floatingInputValue" placeholder="Confirm Password" type="text" onChange={(e) => setConfirmPassword(e.target.value)} />
-                            <label htmlFor="floatingInputValue" className='w-50 text-danger'>* {errors.confirmPassword.message}</label><br />
+                            <label htmlFor="floatingInputValue" className='text-start text-danger'>* {errors.confirmPassword.message}</label><br />
                         </div> : <div className='form-floating'>
                             <input className="form-control " id="floatingInputValue" placeholder="Confirm Password" type="text" onChange={(e) => setConfirmPassword(e.target.value)} />
-                            <label htmlFor="floatingInputValue" className='w-50 text-dark'><span style={{color:'red'}}>*</span> Confirm Password</label><br />
+                            <label htmlFor="floatingInputValue" className='text-start text-dark'><span style={{color:'red'}}>*</span> Confirm Password</label><br />
                         </div>
                     }
                 </div>

@@ -18,16 +18,31 @@ const Creature = (props) => {
                 console.log(err);
             })
         }, [])
+
+    const [query, setQuery] = useState("") //for search bar
+
+    const sortVideos = [...videos].sort((a, b) =>
+    a.title > b.title ? 1 : -1)
         
         return (
             <div className='bg-white container-fluid'>
                             <div className='p-3'>
                 <img className='w-50 h-50' src={require('../images/Creature_skateboardslogo.webp')} alt='creature' />
             </div>
-            <div className='d-flex flex-wrap'>
+            <div>
+                <input className='mb-3' placeholder="Search" onChange={e => setQuery(e.target.value)} />
+            </div>
+            <div className='cards'>
                 {
-                    videos.filter(video => video.company === 'Creature').map((video, index) => {
+                    sortVideos.filter(vid => {
+                        if (query === '') { //filter and below for search bar
+                            return vid;
+                        } else if (vid.title.toLowerCase().includes(query.toLowerCase())) {
+                            return vid;
+                        }
+                    }).filter(video => video.company === 'Creature').map((video, index) => {
                         return <div key={index}>
+                            <div className='oneCard'>
                             <Card className='m-2 bg-light' style={{ width: '18rem' }}>
                                 <Card.Header>{video.title}</Card.Header>
                                 <Card.Subtitle className='bg-light bg-gradient m-2'><svg style={{ marginRight: '10px' }} xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" className="bi bi-person" viewBox="0 0 16 16">
@@ -42,6 +57,7 @@ const Creature = (props) => {
                                     </Card.Body>
                                 </div>
                             </Card>
+                            </div>
                         </div>
                     })
                 }

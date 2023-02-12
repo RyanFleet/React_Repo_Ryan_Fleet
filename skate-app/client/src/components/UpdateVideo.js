@@ -77,37 +77,37 @@ const UpdateVideo = (props) => {
 
     return (
         <div className='d-flex p-5 bg-white'>
-            <form onSubmit={Submit} className='form-control bg-dark p-5'>
+            <form style={{backgroundColor: '#5e615f'}} onSubmit={Submit} className='form-control p-5'>
                 <Link className='' to={'/users/vids'}><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" className="bi bi-arrow-left mb-3 me-5" viewBox="0 0 14 14">
                     <path fillRule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
-                    </svg><span className="placeholder col-12 bg-dark w-50"></span></Link>
-                <h3 className='text-success'>Update {title}?</h3>
+                    </svg><span style={{backgroundColor: '#5e615f'}} className="placeholder col-12 w-50"></span></Link>
+                <h3 className='text-white'>Update {title}?</h3>
                 <p className='text-start' style={{ color: 'red' }}>* Required</p>
                 <div className='form-floating'>
                     {
                         errors.title ? <div className='form-floating'>
                             <input value={title} style={{ color: 'grey' }} className="form-control is-invalid" id="floatingInputValue" placeholder="Title" type="text" onChange={(e) => setTitle(e.target.value)} />
-                            <label htmlFor="floatingInputValue" className='w-50 text-danger'>* {errors.title.message}</label><br />
+                            <label htmlFor="floatingInputValue" className='text-start text-danger'>* {errors.title.message}</label><br />
                         </div> : <div className='form-floating'>
                             <input value={title} className="form-control " id="floatingInputValue" placeholder="Title" type="text" onChange={(e) => setTitle(e.target.value)} />
-                            <label htmlFor="floatingInputValue" className='w-50 text-dark'><span style={{ color: 'red' }}>*</span> Title</label><br />
+                            <label htmlFor="floatingInputValue" className='text-start text-dark'><span style={{ color: 'red' }}>*</span> Title</label><br />
                         </div>
                     }
                 </div>
                 <div className='form-floating' style={{ color: '' }}>
                     <div className='form-floating'>
                         <input value={description} className="form-control " id="floatingInputValue" placeholder="Description" type="textarea" onChange={(e) => setDescription(e.target.value)} />
-                        <label htmlFor="floatingInputValue" className='w-50 text-dark'> Description</label><br />
+                        <label htmlFor="floatingInputValue" className='text-start text-dark'> Description</label><br />
                     </div>
                 </div>
                 <div className='form-floating' style={{ color: '' }}>
                     {
                         errors.link ? <div className='form-floating'>
                             <input value={link} style={{ color: 'grey' }} className="form-control is-invalid" id="floatingInputValue" placeholder="Link" type="text" onChange={(e) => setLink(e.target.value)} />
-                            <label htmlFor="floatingInputValue" className='w-50 text-danger'>* {errors.link.message}</label><br />
+                            <label htmlFor="floatingInputValue" className='text-start text-danger'>* {errors.link.message}</label><br />
                         </div> : <div className='form-floating'>
                             <input value={link} className="form-control " id="floatingInputValue" placeholder="Link" type="text" onChange={(e) => setLink(e.target.value)} />
-                            <label htmlFor="floatingInputValue" className='w-50 text-dark'><span style={{ color: 'red' }}>*</span> Link</label><br />
+                            <label htmlFor="floatingInputValue" className='text-start text-dark'><span style={{ color: 'red' }}>*</span> Link</label><br />
                         </div>
                     }
                 </div>
@@ -133,24 +133,24 @@ const UpdateVideo = (props) => {
                                 <option value='Independent'>Independent</option>
                                 <option value='Bronze 56k'>Bronze 56k</option>
                             </select>
-                            <label className='w-50 form-label' htmlFor='floatingSelect'> <span style={{ color: 'red' }}>*</span> User / Company</label>
+                            <label className='text-start form-label' htmlFor='floatingSelect'> <span style={{ color: 'red' }}>*</span> User / Company</label>
                         </div>
                     </div>
                 </div>
                 <div className='d-flex ml-2'>
                     <div className='form-floating mb-3 col-12 ml-5 text-start'>
                         <input className="form-control " id="floatingInput" type="date" onChange={(e) => setDate(e.target.value)} />
-                        <label htmlFor='floatingInput' className='w-50 form-label' style={{ color: 'black' }}>Date: </label>
+                        <label htmlFor='floatingInput' className='text-start form-label' style={{ color: 'black' }}>Date: </label>
                     </div>
                 </div>
                 <div className='form-floating' style={{ color: '' }}>
                     {
                         errors.creator ? <div className='form-floating'>
                             <input value={creator} style={{ color: 'grey' }} className="form-control is-invalid" id="floatingInputValue" placeholder="Made By" type="text" onChange={(e) => setCreator(e.target.value)} />
-                            <label htmlFor="floatingInputValue" className='w-50 text-danger'>* Made By is Required</label><br />
+                            <label htmlFor="floatingInputValue" className='text-start text-danger'>* Made By is Required</label><br />
                         </div> : <div className='form-floating'>
                             <input value={creator} className="form-control " id="floatingInputValue" placeholder="Made By" type="text" onChange={(e) => setCreator(e.target.value)} />
-                            <label htmlFor="floatingInputValue" className='w-50 text-dark'><span style={{ color: 'red' }}>*</span> Made By</label><br />
+                            <label htmlFor="floatingInputValue" className='text-start text-dark'><span style={{ color: 'red' }}>*</span> Made By</label><br />
                         </div>
                     }
                 </div>

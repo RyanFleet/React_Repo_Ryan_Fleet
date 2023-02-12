@@ -5,8 +5,7 @@
   display: flex;
   flex-direction: column;
   background-attachment: fixed;
-  height: 500px;
-  background-color: #21242a;
+  height: 100vh;
 }
 
 .App-logo {
@@ -23,13 +22,48 @@
   --bs-popover-body-padding-y: .5rem;
 }
 
+@keyframes loginLogout {
+  0% {color: white;}
+  100% {color:black;}
+}
+.login, .logout, .companies, .userSubmissions {
+  color:white
+}
+
 .active {
   text-decoration:none;
   font-size: 20px;
+  animation-name: loginLogout;
+  animation-duration:2s;
+  color:black
 }
 
 #logout {
   text-decoration: none;
+  color: black
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+  justify-content: space-between;
+  padding-left: 20px;
+}
+.second {
+  display: flex;
+  flex-direction: column;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.oneCard {
+  margin: 2px;
 }
 
 
@@ -56,34 +90,6 @@
 
 
 
-#body {
-  background: linear-gradient(-45deg, #5e615f, #dcd6e6, #565757, #f5f7f6);
-  background-size: 400% 400%;
-  animation: gradient 20s ease infinite;
-}
-
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-
-.smallLine {
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-  background-size: 400% 400%;
-  display: flex;
-  height: 3px;
-  animation: gradient 15s ease infinite;
-}
 
 /* VIDEO */
 .player-wrapper {
@@ -96,5 +102,41 @@
   left: 0;
 }
 
+body {
+  margin:0;
+}
 
+.bg {
+  animation:slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, rgb(185, 185, 185) 50%, rgb(23, 23, 23) 50%);
+  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
 
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:4s;
+}
+
+.bg3 {
+  animation-duration:5s;
+}
+
+.content {
+  padding:10vmin;
+  text-align:center;
+}
+
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
+}
