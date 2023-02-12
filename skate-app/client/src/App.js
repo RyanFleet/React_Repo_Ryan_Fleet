@@ -28,16 +28,16 @@ function App() {
   const [videos, setVideos] = useState([])
   const [loggedIn, setLoggedIn] = useState(false)
 
-  useEffect(() => {
-  window.localStorage.setItem('loggedIn', JSON.stringify(loggedIn))
-  console.log(loggedIn)
-}, [loggedIn]);
+//   useEffect(() => {
+//   window.localStorage.setItem('loggedIn', JSON.stringify(loggedIn))
+//   console.log(loggedIn)
+// }, [loggedIn]);
 
-useEffect(() => {
-  const data = window.localStorage.getItem('loggedIn')
-  setLoggedIn(JSON.parse(data))
-  console.log(loggedIn)
-  }, []);
+// useEffect(() => {
+//   const data = window.localStorage.getItem('loggedIn')
+//   setLoggedIn(JSON.parse(data))
+//   console.log(loggedIn)
+//   }, []);
 
   return (
     <div className="App">

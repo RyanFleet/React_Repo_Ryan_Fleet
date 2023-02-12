@@ -25,7 +25,7 @@ const Register = (props) => {
         }, { withCredentials: true, credentials: 'include' })
             .then(res => {
                 setUsers([...users, res.data])
-                console.log(users)
+                // console.log(users)
                 setLoggedIn(true)
                 nav('/')
             })
