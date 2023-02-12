@@ -3,6 +3,7 @@ const app = express();
 const port = 8000;
 const cors = require('cors')
 const cookieParser = require('cookie-parser');
+const path = require('path')
 
 app.use(cors({ credentials: true, origin: 'http://localhost:3000' }));
 app.use(cookieParser())
