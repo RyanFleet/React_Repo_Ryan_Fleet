@@ -42,7 +42,7 @@ userSchema.pre('validate', function (next) {
 userSchema.pre('save', async function(next){
     try{
         const hashedPassword = await bcrypt.hash(this.password,10)
-        console.log(hashedPassword)
+        // console.log(hashedPassword)
         this.password = hashedPassword
         next()
     } catch{
