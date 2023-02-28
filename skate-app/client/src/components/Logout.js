@@ -8,7 +8,7 @@ const Logout = (props) => {
 
   const logoutHandle = (e) => {
     // e.preventDefault()
-    axios.get('http://localhost:8000/api/logout', { withCredentials: true, credentials: 'include' })
+    axios.get('http://127.0.0.1:8000/api/logout', { withCredentials: true, credentials: 'include' })
       .then((res) => {
         console.log('logged out')
         setLoggedIn(false)

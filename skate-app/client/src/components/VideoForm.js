@@ -18,7 +18,7 @@ const VideoForm = (props) => {
 
     const Submit = (e) => {
         e.preventDefault();
-        axios.post('http://localhost:8000/api/video', {
+        axios.post('http://127.0.0.1:8000/api/video', {
             title,
             description,
             link,

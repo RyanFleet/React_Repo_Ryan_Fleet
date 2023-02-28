@@ -10,7 +10,7 @@ const UserVideos = (props) => {
     var companyInput = videos.company
 
     useEffect(() => {
-        axios.get('http://localhost:8000/api/allVideos', { withCredentials: true, credentials: 'include' })
+        axios.get('http://127.0.0.1:8000/api/allVideos', { withCredentials: true, credentials: 'include' })
             .then((res) => {
                 console.log(res.data)
                 setVideos(res.data)
@@ -32,7 +32,7 @@ const UserVideos = (props) => {
                     <input className='mb-3 mt-3' placeholder="Search" onChange={e => setQuery(e.target.value)} />
                 </div>
             </div>
-            <div className='bg-light d-flex flex-wrap'>
+            <div className='bg-white d-flex flex-wrap'>
                 <div className='pb-4'></div>
                 {
                     sortVideos.filter(vid => {

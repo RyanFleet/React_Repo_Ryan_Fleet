@@ -17,13 +17,13 @@ const Login = (props) => {
 
     const Submit = (e) => {
         e.preventDefault();
-        axios.post('http://localhost:8000/api/login', {
+        axios.post('http://127.0.0.1:8000/api/login', {
             email: email,
             password: password,
         }, { withCredentials: true, credentials: 'include' })
             .then(res => {
-                console.log(res.data)
-                console.log(users)
+                // console.log(res.data)
+                // console.log(users)
                 // setUsers([...users, res.data])
                 setLoggedIn(true)
                 nav(`/`)
