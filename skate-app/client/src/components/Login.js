@@ -17,7 +17,7 @@ const Login = (props) => {
 
     const Submit = (e) => {
         e.preventDefault();
-        axios.post('http://127.0.0.1:8000/api/login', {
+        axios.post('http://localhost:8000/api/login', {
             email: email,
             password: password,
         }, { withCredentials: true, credentials: 'include' })

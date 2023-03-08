@@ -15,7 +15,7 @@ const OneVideo = () => {
 
 
     useEffect(() => {
-        axios.get(`http://127.0.0.1:8000/api/video/${id}`, { withCredentials: true, credentials: 'include' })
+        axios.get(`http://localhost:8000/api/video/${id}`, { withCredentials: true, credentials: 'include' })
             .then(res => {
                 setVideos(res.data)
             })
@@ -23,7 +23,7 @@ const OneVideo = () => {
     }, [])
 
     const deleteVideo = (id) => {
-        axios.delete(`http://127.0.0.1:8000/api/video/${id}`, { withCredentials: true, credentials: 'include' })
+        axios.delete(`http://localhost:8000/api/video/${id}`, { withCredentials: true, credentials: 'include' })
             .then(res => {
                 nav('/')
                 setVideos(videos.filter(video => video._id !== id))

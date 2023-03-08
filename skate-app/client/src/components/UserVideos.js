@@ -10,7 +10,7 @@ const UserVideos = (props) => {
     var companyInput = videos.company
 
     useEffect(() => {
-        axios.get('http://127.0.0.1:8000/api/allVideos', { withCredentials: true, credentials: 'include' })
+        axios.get('http://localhost:8000/api/allVideos', { withCredentials: true, credentials: 'include' })
             .then((res) => {
                 console.log(res.data)
                 setVideos(res.data)

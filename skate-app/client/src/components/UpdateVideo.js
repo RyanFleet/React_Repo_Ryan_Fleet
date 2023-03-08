@@ -17,7 +17,7 @@ const UpdateVideo = (props) => {
     const [errors, setErrors] = useState({})
 
     useEffect(() => {
-        axios.get(`http://127.0.0.1:8000/api/video/${id}`, { withCredentials: true, credentials: 'include' })
+        axios.get(`http://localhost:8000/api/video/${id}`, { withCredentials: true, credentials: 'include' })
             .then(res => {
                 setTitle(res.data.title)
                 setDescription(res.data.description)
@@ -31,7 +31,7 @@ const UpdateVideo = (props) => {
 
     const Submit = (e) => {
         e.preventDefault()
-        axios.put(`http://127.0.0.1:8000/api/video/${id}`, {
+        axios.put(`http://localhost:8000/api/video/${id}`, {
             title,
             description,
             link,
