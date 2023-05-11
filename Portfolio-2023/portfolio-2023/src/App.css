@@ -1,0 +1,52 @@
+
+.main {
+  overflow: hidden;
+  background-color: #333;
+  position:fixed;
+  top: 0;
+  width: 100%;
+}
+.main div {
+  display: flex;
+  float: left;
+  text-align: center;
+}
+.main div:hover {
+  background: #525151;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.active {
+  background: #8e8d8d;
+}
+
+.contact {
+  overflow: hidden;
+  margin-top: 30px;
+  padding-top: 10px;
+  background: white;
+  width:auto;
+  height: auto;
+
+}
+
+.forest {
+  display: flex;
+  justify-content: flex-end;
+  bottom: 0;
+  position: fixed;
+  right: -120px;
+  bottom: -60px;
+}
+
+.projects {
+  padding-left:50px;
+  padding-top: 20px;
+  font-size: 30px;
+  width:fit-content;
+  color: #333;
+}
+.projects h1:hover {
+  color: #428152;
+  transition: color 0.5s;
+}
