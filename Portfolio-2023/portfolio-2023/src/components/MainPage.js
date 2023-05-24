@@ -2,6 +2,9 @@ import React from "react";
 import Links from "./links/Links";
 import Mountain from "./Mountain";
 
+//fonts
+import "./fonts/StanderdfreeRegular-X3KK2.otf"
+
 
 const MainPage = (props) => {
     return (
@@ -11,9 +14,8 @@ const MainPage = (props) => {
             </div>
             <div className="contact">
                 <div>
-                <h1>Ryan Fleet</h1>
+                <h1 className="name">Ryan Fleet</h1>
                 </div>
-                
                 <div>
                     <Mountain/>
                 </div>

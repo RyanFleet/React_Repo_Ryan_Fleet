@@ -1,10 +1,11 @@
 import React from 'react'
-import forest from './photos/forestbg.jpeg'
+
 
 const Mountain = () => {
+    var mountainOutline = require('./photos/forestbg.jpeg')
         return (
             <div className="forest">
-                <img className='' src={forest} alt='forest' />
+                <img className='' src={mountainOutline} alt='forest' />
             </div>
         )
 }
