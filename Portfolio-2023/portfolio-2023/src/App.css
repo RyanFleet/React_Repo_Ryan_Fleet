@@ -30,9 +30,9 @@
 }
 
 #cardGif:hover{
-  -webkit-transform: scale(1.3);
-  -ms-transform: scale(1.3);
-  transform: scale(1.3);
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
   transition: 0.5s;
   padding: 20px;
 }
@@ -49,6 +49,7 @@
 .contact {
   overflow: hidden;
   padding-left:50px;
+  padding-right:50px;
   margin-top: 30px;
   padding-top: 20px;
   background: white;
@@ -102,10 +103,33 @@
 
 .name {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   font-family: "Light";
-  font-size: 56px;
+  font-size: 72px;
   color: #333;
+}
+
+.rhap_container, .rhap_container *:focus {
+  outline: none;
+}
+.rhap_container {
+  background-color: #333 !important;
+  border-radius: 10px;
+  margin: 5px;
+  height: auto;
+}
+.rhap_container svg {
+  color:#8e8d8d !important;
+}
+.rhap_time{
+  color: white !important; 
+}
+.rhap_header {
+  color: white;
+}
+
+.audioPlayers {
+  justify-content: center;
 }
 
 

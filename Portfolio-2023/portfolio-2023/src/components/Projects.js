@@ -8,7 +8,7 @@ const Projects = () => {
             <div className="bg">
                 <div className="projects">
                     <div className="row row-cols-1 row-cols-md-2 g-5">
-                        <div class="col">
+                        <div className="col">
                             <div id="cardGifDiv" className="card">
                                 <img id="cardGif" src={require('./gifs/Screen Recording 2023-05-23 at 7.49.09 PM.gif')} className="card-img-top" alt="ToyVaultGif" />
                                 <div id="cardContent" className="card-body">
@@ -33,6 +33,20 @@ const Projects = () => {
                                         </div>
                                     </div>
                                     <p class="card-text">My first solo web application for users to watch their favorite skateboarding videos and upload their own. This was a super fun project!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div id="cardGifDiv" className="card">
+                                <img id="cardGif" src={require('./gifs/Screen Recording 2023-05-24 at 5.02.24 PM.gif')} className="card-img-top" alt="Skate Vault gif" />
+                                <div id="cardContent" className="card-body">
+                                    <div className="d-flex justify-content-around align-items-center">
+                                        <h5 className="card-title display-6">ThreeJs Skyscraper</h5>
+                                        <div className="githubLinkDiv">
+                                            <a className="githubLink" href="https://github.com/RyanFleet/React_Repo_Ryan_Fleet/tree/master/Portfolio-Project/portfolio">{githubLogo}</a>
+                                        </div>
+                                    </div>
+                                    <p class="card-text">A work in progress side project. I have been playing with ThreeJs for a few months now and this is me attempting to create a skyscraper with pure 3js. </p>
                                 </div>
                             </div>
                         </div>
