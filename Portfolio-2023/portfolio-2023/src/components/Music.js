@@ -15,19 +15,20 @@ import talkAbout from './music/TalkAbout 128.mp3'
 
 
 const Music = (props) => {
+    // for offCanvas music
     const [show, setShow] = useState(false);
-
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
+    //
     return (
         <div>
-            <div className="">
+            <div className='musicButton' >
                 <Button variant="dark" onClick={handleShow} className="me-2">
-                    View Music
+                    Some Songs
                 </Button>
                 <Offcanvas show={show} onHide={handleClose} {...props}>
                     <Offcanvas.Header closeButton>
-                        <Offcanvas.Title>Just a few songs</Offcanvas.Title>
+                        <Offcanvas.Title></Offcanvas.Title>
                     </Offcanvas.Header>
                     <Offcanvas.Body>
                         <div className="">
