@@ -1,0 +1,304 @@
+
+.main {
+  background-color: #333;
+  opacity: .95;
+  position:fixed;
+  top: 0;
+  width: 100%;
+  font-family: "Light";
+  overflow: hidden;
+}
+.main div {
+  display: flex;
+  float: left;
+  text-align: center;
+}
+.main div:hover {
+  background: #525151;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.active {
+  background: #8e8d8d;
+}
+
+.githubLink {
+  color: #333;
+  transition: color 0.5s;
+}
+.githubLinkDiv a:hover {
+  color: rgb(61, 113, 255);
+  transition: color 0.5s;
+}
+.contactIconLink {
+  color: #333;
+  transition: color 0.5s;
+}
+.contactIconLinkDiv a:hover {
+  color: rgb(61, 113, 255);
+  transition: color 0.5s;
+}
+.contactIconGit {
+  color: #333;
+  transition: color 0.5s;
+}
+.contactIconGitDiv a:hover {
+  color: rgb(252, 169, 43);
+  transition: color 0.5s;
+}
+.contactIconInsta {
+  color: #333;
+  transition: color 0.5s;
+}
+.contactIconInstaDiv a:hover {
+  color: rgb(232, 47, 118);
+  transition: color 0.5s;
+}
+
+#cardGif:hover{
+  -webkit-transform: scale(1.25);
+  -ms-transform: scale(1.25);
+  transform: scale(1.25);
+  transition: 0.5s;
+  padding: 20px;
+}
+
+#cardGif{
+  border-radius: 5px;
+  -webkit-transform: scale(1.0);
+  -ms-transform: scale(1.0);
+  transform: scale(1.0);
+  transition: 0.5s;
+}
+.homeImgs:hover{
+  -webkit-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  transform: scale(0.9);
+  transition: 0.5s;
+  margin: -40px;
+}
+
+.homeImgs{
+  border-radius: 5px;
+  -webkit-transform: scale(1.0);
+  -ms-transform: scale(1.0);
+  transform: scale(1.0);
+  transition: 0.5s;
+}
+
+
+.mainPage {
+  overflow: hidden;
+  padding-left:30px;
+  padding-right:30px;
+  margin-top: 30px;
+  background: white;
+  width:auto;
+  height: auto;
+  font-family: "Light";
+}
+.contactPage {
+  overflow: hidden;
+  padding-left:30px;
+  padding-right:30px;
+  margin-top: 30px;
+  padding-top: 30px;
+  font-family: "Light";
+  background: white;
+  width:auto;
+  height: auto;
+}
+.contactIcon {
+  width: 80px;
+  height: 80px;
+}
+.contactIconDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 150px;
+}
+
+.forest {
+  display: flex;
+  justify-content: flex-end;
+  bottom: 0;
+  position: fixed;
+  right: -40px;
+  bottom: -40px;
+  width: 200px;
+  height: 200px;
+  overflow: visible;
+}
+
+.projects {
+  padding: 50px;
+  margin-top: 30px;
+  color: #333;
+  font-family: 'Light';
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.toyCollectorDesc {
+  font-family: 'Light';
+  width: 400px;
+  display: flex;
+  padding-bottom: 100px;
+  padding-top: 50px;
+}
+
+.toyVaultGif {
+  width: 300px;
+  height: 200px;
+}
+.toyVaultGifDiv {
+  display: flex;
+  justify-content: center;
+}
+
+.name {
+  display: flex;
+  justify-content: flex-start;
+  font-family: "Light";
+  font-size: 72px;
+  color: #333;
+}
+
+.rhap_container, .rhap_container *:focus {
+  outline: none;
+}
+.rhap_container {
+  background-color: #333 !important;
+  border-radius: 10px;
+  margin: 5px;
+  height: auto;
+}
+.rhap_container svg {
+  color:#8e8d8d !important;
+}
+.rhap_time{
+  color: white !important; 
+}
+.rhap_header {
+  color: white;
+}
+
+.audioPlayers {
+  justify-content: center;
+}
+
+.myDescription {
+  padding-top: 180px;
+  padding-bottom: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items:flex-end;
+  font-family: "Light";
+
+}
+.musicButton {
+  padding-top: 50px;
+  font-family: "Light";
+
+}
+
+.snowboarder {
+  width: 50px;
+  height: 50px;
+}
+.languages {
+  margin: 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.icons {
+  padding-top: 200px;
+}
+
+.ryanFleet {
+padding-top: 20px;
+padding-bottom: 20px;
+margin-right: 20px;
+}
+.ryanFleet h1 {
+  font-size: 8vmax;
+}
+
+.firstPic {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-bottom: 50px;
+}
+.secondPic {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 50px;
+}
+
+
+.scrollToTop {
+  display: flex;
+  justify-content: flex-end;
+}
+.arrowA {
+position: relative;
+display: flex;
+flex-direction: column;
+align-items: center;
+border: none;
+background-color: white;
+}
+.topScrollArrow {
+  width: 50px;
+  height: 50px;
+}
+
+
+
+/* FONTS */
+
+@font-face {
+  font-family: "Light";
+  src: local("standard"),
+    url("./components/fonts/StanderdfreeRegular-X3KK2.otf") format("truetype");
+}
+
+/* Fade-In Animation */
+
+.fadeInPage {
+  animation: fadeIn 2s;
+  -webkit-animation: fadeIn 2s;
+  -moz-animation: fadeIn 2s;
+  -o-animation: fadeIn 2s;
+  -ms-animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-moz-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-webkit-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-o-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-ms-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
