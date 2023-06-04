@@ -4,7 +4,7 @@ import Music from "./Music";
 import 'react-h5-audio-player/lib/styles.css';
 import '../App.css'
 //fonts
-import "./fonts/StanderdfreeRegular-X3KK2.otf"
+// import "./fonts/StanderdfreeRegular-X3KK2.otf"
 import { FaSnowboarding } from "react-icons/fa";
 import { CgMusic } from "react-icons/cg";
 import { IoGameController } from "react-icons/io5";
@@ -112,11 +112,8 @@ const MainPage = (props) => {
                                     <img className="homeImgs card card-img" src={require('./photos/FullSizeRender (1).jpg')} alt="Me" />
                                 </div>
                                 <div className="col">
-                                    <h4>
-                                        I have a few of my projects showcased here as well.
-                                        Just use the navigation bar at the top to check them
-                                        out!
-                                    </h4>
+                                </div>
+                            </div>
                                     <div className="scrollToTop">
                                         <button className="arrowA text-dark"
                                             onClick={handScrollToTop}>
@@ -124,8 +121,6 @@ const MainPage = (props) => {
                                             <p>Back To Top</p>
                                         </button>
                                     </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
